@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "coustom-keybinds",
+  "version": "2.3.4",
+  "name": "Coustom Keybinds",
+  "description": "Set custom keybinds to run commands",
+  "authors": ["-slowbag"],
+  "icon": "assets/coustomkeybind/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.coustommod.KeybindMod"],
+    "client": ["com.example.coustommod.client.KeybindClientMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "configScreenFactory": "com.example.coustommod.client.ConfigScreenFactory::createConfigScreen"
+    }
+  }
+}
